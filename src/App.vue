@@ -1,28 +1,41 @@
 <template>
-  <!--  <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>--> <!-- Vue 프로젝트 생성 시 존재하는 기본 코드 제거 -->
-  
-    <router-view /> <!-- router.js 맵핑된 view 적용 코드 추가 -->
+   <transition name="fade" mode="out-in" @before-enter="beforeEnter" appear>
+    <router-view :blog="blog"></router-view>
+  </transition>
   </template>
   
   <script>
-  // import HelloWorld from './components/HelloWorld.vue'  <-- Vue 프로젝트 생성 시 존재하는 기본 코드 제거
-  
+
+import Blog from './data/data.js'
+
   export default {
-    name: 'App'
-    /*components: {  <-- Vue 프로젝트 생성 시 존재하는 기본 코드 제거
-      HelloWorld
-    }*/
+    name: 'App',
+    data () {
+    return {
+      blog: Blog,
+   }
+  },
+  methods: {
+    beforeEnter () {
+      this.$root.$emit('scrollBeforeEnter')
+    }
+  },
+  components: {}
   }
   </script>
   
+
   <style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 350ms;
+  }
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+  .fade-leave,
+  .fade-enter-to {
+    opacity: 1;
   }
   </style>

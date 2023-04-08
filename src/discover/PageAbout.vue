@@ -1,5 +1,5 @@
 <template>
-    <pageNavbar />
+    <PageNavbar />
   
     <div class="hidden lg:block container mt-5">
       <div class="page-banner1">
@@ -19,8 +19,8 @@
       </div>
     </div>
   
-    <About />
-    <pageServices />
+    <pageDetailAbout />
+    <PageServices />
   
     <div class="bg-green-50 py-5 page-section">
       <div class="container">
@@ -94,15 +94,17 @@
       </div>
     </div>
   
-    <PageFooter :blog="blog" />
+    <pageFooter :blog="blog" />
   </template>
+  
   <script>
-   import pageNavbar from "../components/pageNavbar.vue";
-  import pageServices from "../components/pageServices.vue";
-  import PageFooter from "../components/PageFooter.vue";
+  import PageNavbar from "../components/pageNavbar.vue";
+  import pageDetailAbout from "../components/pageDetailAbout.vue";
+  import PageServices from "../components/pageServices.vue";
+  import pageFooter from "../components/pageFooter.vue";
   
   export default {
-    name: "AboutPage",
+    name: "PageAbout",
     data() {
       return {};
     },
@@ -112,9 +114,10 @@
     },
   
     components: {
-      pageNavbar,
-      pageServices,
-      PageFooter,
+      PageNavbar,
+      pageDetailAbout,
+      PageServices,
+      pageFooter,
     },
   };
   </script>

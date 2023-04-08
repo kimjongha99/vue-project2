@@ -2,7 +2,7 @@
     <pageNavbar />
     <pageHeader />
     <pageServices />
-    <AboutPage />
+    <!-- <AboutPage /> -->
 
     <div class="bg-green-50 py-5 page-section">
       <div class="container">
@@ -77,15 +77,14 @@
     </div>
   
     <Blog :blog="blog" />
-    <PageFooter />
+    <pageFooter />
   </template>
   
   <script>
   import pageNavbar from "./pageNavbar.vue";
   import pageHeader from "./pageHeader.vue";
   import pageServices from "./pageServices.vue";
-  import PageFooter from "./PageFooter.vue";
-  import AboutPage from "../discover/AboutPage.vue";
+  import pageFooter from "./pageFooter.vue";
   
   export default {
     name: "pageHome",
@@ -101,8 +100,7 @@
       pageNavbar,
       pageHeader,
       pageServices,
-      PageFooter,
-      AboutPage,
+      pageFooter,
     },
   };
   </script>

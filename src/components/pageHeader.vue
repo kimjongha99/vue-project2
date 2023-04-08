@@ -33,15 +33,9 @@
               </a>
             </div>
             <div class="col-lg-6 wow zoomIn">
-              <div
-                class="m-3 lg:m-3 p-1 lg:p-5">
-                <lottie-player
-                  src="https://assets2.lottiefiles.com/packages/lf20_gnb0jsok.json"
-                  background="transparent"
-                  speed="1"
-                  style="max-width: 500px; max-height: 500px"
-                  autoplay></lottie-player>
-              </div>
+              
+                <img src="../images/jongha4.jpg" alt="Image" class="img-fluid">
+                    
             </div>
           </div>
         </div>
@@ -51,8 +45,8 @@
   </template>
   
   <script>
-  
-  export default {};
+export default {};
+
   </script>
   
   <style></style>
