@@ -13,10 +13,9 @@
                     style="width: 150px; height: 150px"></lord-icon>
                 </div>
                 <div>
-                  <h>Front End</h>
+                  <h>쉽고 편리함</h>
                   <p>
-                    I like to craft solid and scalable frontend products with
-                    great user experiences.
+                    AI 기반 칼로리 추적을 통해 사용자는 간단하게 음식 사진을 찍고 예상 칼로리 수를 몇 초 안에 받을 수 있습니다
                   </p>
                 </div>
               </div>
@@ -35,10 +34,9 @@
                   </div>
                 </div>
                 <div>
-                  <h4>Blockchain</h4>
+                  <h4>정확하고 개인화</h4>
                   <p>
-                    I also learn and work as Blockchain & Smart Contract
-                    freelancer developer.
+                    AI 알고리즘을 활용하여 칼로리 계산 웹사이트는 음식 유형, 부분 크기 및 요리 방법과 같은 요소를 기반으로 칼로리 계산에 대한 보다 정확하고 개인화된 추정치를 제공할 수 있습니다. 
                   </p>
                 </div>
               </div>
@@ -55,10 +53,9 @@
                     style="width: 150px; height: 150px"></lord-icon>
                 </div>
                 <div>
-                  <h5>Mobile Apps</h5>
+                  <h5>동기 부여 및 정보 제공</h5>
                   <p>
-                    I also highly interested in Native & Hybrid mobile app
-                    development.
+                    사와 간식의 칼로리 수를 실시간으로 확인하는 것은 더 건강한 선택을 하려는 사용자에게 동기 부여 요인이 될 수 있습니다.
                   </p>
                 </div>
               </div>

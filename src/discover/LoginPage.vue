@@ -1,10 +1,15 @@
 <template>
      <pageNavbar />
-     <div class="flex justify-center items-center h-screen">
-        <div class="border border-dashed border-primary-500 rounded-lg p-8">
-            <div class="border-2 border-double border-secondary-500 rounded-lg p-8">
-                <div class="border border-solid border-blue-700 rounded-lg p-8">
 
+
+     
+     <div class="flex justify-center items-center h-screen">
+      
+        <div class="border border-dashed border-primary-500 rounded-lg p-8">
+      <h1 class="text-center text-4xl font-bold mb-8">Login</h1>
+
+            <div class="border-2 border-double border-secondary-500 rounded-lg p-8">
+                <div class="border border-solid border-blue-700 rounded-lg p-8"> 
 
 
     <!-- Content to be centered -->
@@ -22,7 +27,6 @@
 </div>
 
 </div>
-
   </template>
   
   <script>

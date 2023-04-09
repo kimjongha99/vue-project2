@@ -1,16 +1,32 @@
 <template>
          <pageNavbar />
          <div class="flex justify-center items-center h-screen">
+          
         <div class="border border-dashed border-primary-500 rounded-lg p-8">
+          <h1 class="text-center text-4xl font-bold mb-8">Login</h1>
+
             <div class="border-2 border-double border-secondary-500 rounded-lg p-8">
                 <div class="border border-solid border-blue-700 rounded-lg p-8">
     <div class="sign-up">
       <p>회원가입</p>
       <input type="text" placeholder="email"><br>
       <input type="password" placeholder="password"><br>
-      <button v-on:click="SignUpPage">가입하기</button>
-      <span>또는  <router-link to="/login">로그인</router-link>으로 돌아가기</span>
+
+      <div class="google text-center mt-5">
+            <div class="google-button">
+            
+              <button @click="googleSignIn" class="btn-primary google-word">
+                Continue with Google
+              </button>
+            </div>
+          </div>
+      
+      <button v-on:click="SignUpPage" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Sign Up
+</button>      
+<span>또는  <router-link to="/login">로그인</router-link>으로 돌아가기</span>
     </div>
+    
 </div>
 </div>
 </div>
