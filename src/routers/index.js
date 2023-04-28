@@ -7,6 +7,7 @@ import PageAbout from '../discover/PageAbout.vue';
 import LoginPage from "@/discover/LoginPage.vue";
 import SignUpPage from "@/discover/SignUpPage.vue";
 import BlogPage from "@/discover/BlogPage.vue";
+import uploadPage from "@/discover/uploadPage.vue";
 const routes = [
 
     {
@@ -31,6 +32,10 @@ const routes = [
     {
         path: "/blog",
         component: BlogPage,
+    },
+    {
+        path: "/upload",
+        component: uploadPage,
     },
     // {
     //     path: "/login",

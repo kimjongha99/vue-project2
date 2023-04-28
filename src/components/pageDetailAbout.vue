@@ -22,7 +22,7 @@
 
               <span class="marked"> <br>사진첨부</span>
             </h2>
-            <div class="divider"></div>
+            <div class="divider" style="width: 80%;"></div>
   
             <div>
               <p>
@@ -36,7 +36,9 @@
     <div class="block text-gray-700 font-bold mb-2">업로드할 이미지파일 :</div>
     <input type="file" class="form-input rounded-md shadow-sm mt-1 block w-full" id="image" name="image">
   </div>
-  <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Upload</button>
+  <router-link to="/upload">
+  <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> Upload </button>
+</router-link>
 </form>
             </div>
   
@@ -60,11 +62,13 @@
   </template>
   
   <script>
+
   export default {
     data() {
       
     },
   
+
  
     
   };
