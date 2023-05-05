@@ -6,7 +6,7 @@ import pageHome from '../components/pageHome.vue';
 import PageAbout from '../discover/PageAbout.vue';
 import LoginPage from "@/discover/LoginPage.vue";
 import SignUpPage from "@/discover/SignUpPage.vue";
-import BlogPage from "@/discover/BlogPage.vue";
+import MyPage from "@/discover/MyPage.vue";
 import uploadPage from "@/discover/uploadPage.vue";
 const routes = [
 
@@ -30,8 +30,8 @@ const routes = [
       },
    
     {
-        path: "/blog",
-        component: BlogPage,
+        path: "/myPage",
+        component: MyPage,
     },
     {
         path: "/upload",
