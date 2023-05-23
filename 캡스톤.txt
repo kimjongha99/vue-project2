@@ -1,0 +1,18 @@
+회원가입 css 처리
+
+
+개인페이지:   꾸미고 , 회원수정 자바스크립트 처리 ,  찜기능 alert 사용
+
+다음 주소 찾기 API 
+
+주소버튼.
+
+파일선택안됐을때 되돌아가기
+
+
+그래프.js 사용해서 탄단지 
+
+https://blog.jeongwoo.in/vue-js-%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EC%B0%A8%ED%8A%B8-%EC%B6%94%EC%B2%9C-4390f704bc7b
+
+
+https://blog.naver.com/blogpeople/220988615177
