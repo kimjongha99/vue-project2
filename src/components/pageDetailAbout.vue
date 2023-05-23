@@ -32,14 +32,14 @@
             <div style="height: 50px;"></div>
             <div>
               <form action="upload.php" method="post" enctype="multipart/form-data">
-  <div class="mb-4">
-    <div class="block text-gray-700 font-bold mb-2">업로드할 이미지파일 :</div>
-    <input type="file" class="form-input rounded-md shadow-sm mt-1 block w-full" id="image" name="image">
+    <div class="mb-4">
+      <div class="block text-gray-700 font-bold mb-2">Image file to upload:</div>
+      <input type="file" class="form-input rounded-md shadow-sm mt-1 block w-full" id="image" name="image">
+    </div>
+    <div>
+    <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="uploadImage">Upload</button>
   </div>
-  <router-link to="/upload">
-  <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> Upload </button>
-</router-link>
-</form>
+  </form>
             </div>
   
            
@@ -62,17 +62,40 @@
   </template>
   
   <script>
+export default {
+  methods: {
+    uploadImage() {
+      const fileInput = document.getElementById("image");
+      const file = fileInput.files[0]; // Get the selected file
+      if (!file || !file.type.startsWith("image/")) {
+        alert("Please select a valid image file.");
+        return;
+      }
 
-  export default {
-    data() {
-      
-    },
-  
+      // Create a new FormData object
+      const formData = new FormData();
+      formData.append("image", file);
 
- 
-    
-  };
-  </script>
+      // Send the image file to the backend using AJAX (e.g., using the Fetch API)
+      fetch("/upload", {
+        method: "POST",
+        body: formData,
+      })
+        .then(() => {
+          // Handle the response from the backend
+          console.log("Image uploaded successfully!");
+
+          // Redirect to the "/upload" route
+          this.$router.push("/upload");
+        })
+        .catch(error => {
+          // Handle any errors that occur during the upload process
+          console.error("Error uploading image:", error);
+        });
+    }
+  }
+}
+</script>
   
   <style></style>
   
