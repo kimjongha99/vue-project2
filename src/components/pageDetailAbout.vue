@@ -33,7 +33,7 @@
             <div>
               <form action="upload.php" method="post" enctype="multipart/form-data">
     <div class="mb-4">
-      <div class="block text-gray-700 font-bold mb-2">Image file to upload:</div>
+      <div class="block text-gray-700 font-bold mb-2">이미지 업로드:</div>
       <input type="file" class="form-input rounded-md shadow-sm mt-1 block w-full" id="image" name="image">
     </div>
     <div>
@@ -68,7 +68,7 @@ export default {
       const fileInput = document.getElementById("image");
       const file = fileInput.files[0]; // Get the selected file
       if (!file || !file.type.startsWith("image/")) {
-        alert("Please select a valid image file.");
+        alert("이미지 파일을 선택해주세요.");
         return;
       }
 
@@ -83,7 +83,7 @@ export default {
       })
         .then(() => {
           // Handle the response from the backend
-          console.log("Image uploaded successfully!");
+          console.log("이미지가 성공적으로 저장되었습니다.!");
 
           // Redirect to the "/upload" route
           this.$router.push("/upload");
