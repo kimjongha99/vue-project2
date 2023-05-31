@@ -11,7 +11,7 @@
                 
                 loop
                 style="max-width: 500px; max-height: 500px"
-                autoplay></lottie-player>
+                autoplay></lottie-player>++
             </div>
           </div>
   
@@ -38,6 +38,8 @@
     </div>
     <div>
     <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="uploadImage">Upload</button>
+
+
   </div>
   </form>
             </div>
@@ -86,7 +88,8 @@ export default {
           console.log("이미지가 성공적으로 저장되었습니다.!");
 
           // Redirect to the "/upload" route
-          this.$router.push("/upload");
+          this.$router.push("/upload");       
+
         })
         .catch(error => {
           // Handle any errors that occur during the upload process

@@ -8,6 +8,8 @@ import LoginPage from "@/discover/LoginPage.vue";
 import SignUpPage from "@/discover/SignUpPage.vue";
 import MyPage from "@/discover/MyPage.vue";
 import uploadPage from "@/discover/uploadPage.vue";
+import upload2Page from "@/discover/upload2Page.vue";
+
 const routes = [
 
     {
@@ -36,7 +38,10 @@ const routes = [
     {
         path: "/upload",
         component: uploadPage,
-    },
+    },  {
+        path: "/upload2",
+        component: upload2Page,
+    }, 
     // {
     //     path: "/login",
     //     component: Login,

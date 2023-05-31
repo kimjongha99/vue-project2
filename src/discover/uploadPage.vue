@@ -6,8 +6,12 @@
       <div class="row">
         <div class="col-lg-6 py-3 wow zoomIn">
           <div class="img-place text-center hidden lg:flex">
-            <img src="@/images/파스타.jpg" alt="description of image" width="500" height="500">
-
+            <img
+        src="@/images/파스타.jpg"
+        alt="description of image"
+        class="responsive-image with-border"
+        width="488"
+        height="488">
           </div>
         </div>
 
@@ -30,18 +34,21 @@
     파스타
   </span>
 </h1>
+    <div>
+    <pageChart/>
+    </div>
+</div>
 
-          </div>
-          <div style="height: 50px;"></div>
           <div>
 <div class="mb-4">
 </div>
-  <div class="flex items-center">'
-  
-  <span class="bg-gray-400 text-white text-lg px-2 py-1 rounded-lg mr-2">Calories: 200</span>
-  <span class="bg-gray-400 text-white text-lg px-2 py-1 rounded-lg mr-2">Recipe for: Pasta</span>
-  <span class="bg-gray-400 text-white text-lg px-2 py-1 rounded-lg">Favorites: 10</span>
-</div>
+<div class="flex-container">
+    <span class="bg-gray-400 text-white text-lg px-2 py-1 rounded-lg flex-item">총 칼로리: 275kcal</span>
+    <span class="bg-gray-400 text-white text-lg px-2 py-1 rounded-lg flex-item">양: 100g 기준</span>
+    <span class="bg-gray-400 text-white text-lg px-2 py-1 rounded-lg flex-item">영양조합: 7/10</span>
+  </div>
+
+
 <div class="divider" style="width: 80%;"></div>
 
 <div>
@@ -141,11 +148,15 @@
       </div>
     </div>
  
+
+ 
 </template>
+
 
 <script>
   import pageNavbar from "@/components/pageNavbar.vue";
   import PageServices from "@/components/pageServices.vue";
+  import pageChart from "@/components/pageChart.vue";
   export default {
     name: "uploadPage",
     data() {
@@ -158,9 +169,36 @@
   
     components: {
       pageNavbar,
-      PageServices
+      PageServices,
+      pageChart 
     },
+  
   };
 </script>
 
-<style></style>
+<style scoped>
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #000;
+}
+
+.with-border {
+  padding: 5px;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+</style>
